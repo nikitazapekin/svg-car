@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    text-align:center;
+    height:100vh;
+   background-color: #0ed3df;
+  /*  max-height: 100vh; */
+overflow-y: hidden;
+    overflow-x: hidden;
+
+
+
+}
+.svg_box {
+    width: 600px;
+    height: 500px;
+    /*position: absolute;
+    top: 0; */
+    position: relative;
+    top: -300px
+
+
+}
+.fon {
+/*background: linear-gradient(90deg, #eceeec, #4dfa0c); */
+
+}
+.ground{
+    width: 100%;
+  height:20%;
+
+    background-color: lawngreen;
+    position: absolute;
+    bottom: 0;
+  /* margin-top: 400px; */
+
+}
+.sky {
+    width: 100%;
+   /* height: 100vh; */
+ /*   position: relative;
+    top:0;
+    background-color: #0ed3df; */
+}
+.tree{
+  background-image: url("https://media.discordapp.net/attachments/772164370406965271/881271385106825236/image0.png?width=710&height=587");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+    z-index: 100000000;
+    position: relative;
+    top: 200px;
+
+    animation: animate 20s linear infinite;
+}
+.text {
+    background-color: #fff;
+    line-height: 24px;
+    border: 1px solid black;
+}
+@keyframes animate {
+    0%{
+        transform: translateX(-400px);
+    }
+    90%{
+        transform: translateX(400px);
+
+
+    }
+    100% {
+        transform: translateX(-400px);
+    }
+
+}
+.sk{
+    background-image: url("https://i.pinimg.com/originals/0c/32/25/0c3225f05765bd183000f408514f78f3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+}
+.fonts {
+    display: flex;
+    gap: 50px;
+    animation: obl  10s linear infinite;
+
+}
+@keyframes obl {
+  0% {
+      transform: translateX(2000px);
+  }
+    99.9% {
+        transform: translateX(-1000px);
+    }
+
+}
